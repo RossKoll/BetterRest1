@@ -13,6 +13,7 @@
 		CEE75B79235CD96200DECA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE75B78235CD96200DECA8A /* Assets.xcassets */; };
 		CEE75B7C235CD96200DECA8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE75B7B235CD96200DECA8A /* Preview Assets.xcassets */; };
 		CEE75B7F235CD96200DECA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE75B7D235CD96200DECA8A /* LaunchScreen.storyboard */; };
+		CEE75B87235E220200DECA8A /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEE75B86235E220200DECA8A /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CEE75B7B235CD96200DECA8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE75B7E235CD96200DECA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE75B80235CD96200DECA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE75B86235E220200DECA8A /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				CEE75B78235CD96200DECA8A /* Assets.xcassets */,
 				CEE75B7D235CD96200DECA8A /* LaunchScreen.storyboard */,
 				CEE75B80235CD96200DECA8A /* Info.plist */,
+				CEE75B86235E220200DECA8A /* SleepCalculator.mlmodel */,
 				CEE75B7A235CD96200DECA8A /* Preview Content */,
 			);
 			path = BetterRest;
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE75B73235CD96000DECA8A /* AppDelegate.swift in Sources */,
+				CEE75B87235E220200DECA8A /* SleepCalculator.mlmodel in Sources */,
 				CEE75B75235CD96000DECA8A /* SceneDelegate.swift in Sources */,
 				CEE75B77235CD96000DECA8A /* ContentView.swift in Sources */,
 			);
