@@ -17,7 +17,6 @@ struct ContentView: View {
     @State private var alertMessage = ""
     @State private var showAlert = false
     
-    let coffeCups = [1,2,3,4,5,6,7,8,9]
     
     static var defaultWakeTime: Date{
         var components = DateComponents()
