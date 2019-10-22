@@ -51,30 +51,32 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            Form{
-                Section(header: Text("When do you want to wake up")){
-                    DatePicker("Please enter a time", selection: $wakeUp, displayedComponents:.hourAndMinute)
-                        .labelsHidden()
-                        .datePickerStyle(WheelDatePickerStyle())
-                }
-                
-                Section(header: Text("Desire amount of sleep")){
-                    Stepper(value: $sleepAomunt, in: 4...12, step: 0.25){
-                        Text("  \(sleepAomunt, specifier: "%g") hours")
+            ScrollView{
+                VStack{
+                    Section(header: Text("When do you want to wake up")){
+                        DatePicker("Please enter a time", selection: $wakeUp, displayedComponents:.hourAndMinute)
+                            .labelsHidden()
+                            .datePickerStyle(WheelDatePickerStyle())
                     }
-                }
-                
-                Section(header: Text("Coffe amount")){
-                    Picker("Cup of coffe", selection: $coffeAmount){
-                        ForEach(0...5, id: \.self){
-                            Text("\($0)")
+                    
+                    Section(header: Text("Desire amount of sleep")){
+                        Stepper(value: $sleepAomunt, in: 4...12, step: 0.25){
+                            Text("  \(sleepAomunt, specifier: "%g") hours")
                         }
-                    }.pickerStyle(WheelPickerStyle())
-                }
-                
-                Section(header: Text("Bad TIme :")){
-                    Text("\(debTime)")
-                        .font(.headline)
+                    }
+                    
+                    Section(header: Text("Coffe amount")){
+                        Picker("Cup of coffe", selection: $coffeAmount){
+                            ForEach(0...5, id: \.self){
+                                Text("\($0)")
+                            }
+                        }.pickerStyle(WheelPickerStyle())
+                    }
+                    
+                    Section(header: Text("Bad Time :")){
+                        Text("\(debTime)")
+                            .font(.headline)
+                    }
                 }
             }
             .navigationBarTitle("BetterRest")
@@ -87,7 +89,9 @@ struct ContentView: View {
 //                    Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton:  .default(Text("OK")))
 //            }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
