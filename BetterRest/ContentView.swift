@@ -80,14 +80,6 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("BetterRest")
-//            .navigationBarItems(trailing:
-//                Button(action: calculateBedTime){
-//                    Text("calculate")
-//                }
-//            )
-//                .alert(isPresented: $showAlert){
-//                    Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton:  .default(Text("OK")))
-//            }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
